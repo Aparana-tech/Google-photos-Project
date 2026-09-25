@@ -1,0 +1,87 @@
+.matrix-empty {
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.matrix-container {
+  padding: 24px;
+}
+
+.matrix-header {
+  display: none; /* Hidden because we moved header to Dashboard.jsx */
+}
+
+.matrix-table-wrapper {
+  overflow-x: auto;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.matrix-table th {
+  padding: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+  text-transform: uppercase;
+}
+
+.matrix-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  vertical-align: middle;
+}
+
+.matrix-row {
+  transition: background-color 0.2s ease;
+}
+
+.matrix-row:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.matrix-row:last-child td {
+  border-bottom: none;
+}
+
+.priority-col {
+  font-weight: 700;
+  color: var(--google-blue);
+  width: 80px;
+}
+
+.desc-col {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.freq-col {
+  width: 250px;
+}
+
+.freq-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.freq-bar {
+  height: 6px;
+  background: var(--google-blue);
+  border-radius: 4px;
+  min-width: 4px;
+  transition: width 1s ease-out;
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.4);
+}
+
+.freq-bar-container span {
+  font-weight: 700;
+  font-size: 0.95rem;
+}

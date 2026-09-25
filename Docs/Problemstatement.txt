@@ -1,0 +1,63 @@
+1. Context & Strategic Anchor
+Over years of usage, Google Photos users accumulate thousands of visual memories, including
+photos, videos, screenshots, and documents. While the current platform allows users to easily search
+when they know exactly what they are looking for, the retrieval experience becomes significantly
+harder when a user's memory is incomplete.
+Users frequently know a photo exists but cannot recall the exact metadata required for traditional
+search, such as when it was taken, where it was taken, the album it belongs to, or the precise
+keywords needed. For example, users rely on associative memory like "That small café we went to
+during our Goa trip" or "The picture of the medicine I took when I was sick last year".
+The strategic goal for the Core Experience team is to increase the percentage of users who
+successfully retrieve a photo they remember but cannot precisely describe when they start
+searching. The fundamental challenge is not to improve general search mechanics, but to
+understand where the retrieval experience breaks down for incomplete memories and identify
+meaningful product opportunities.
+2. The Core Problem Statement
+"How might we build an AI-powered discovery engine to analyze public discourse and user feedback
+at scale, moving beyond basic sentiment analysis to deeply understand how human memory
+formulates incomplete visual searches, thereby identifying actionable product opportunities that
+improve the success rate of finding vaguely remembered photos?"
+3. Objectives of the AI Engine
+Before proposing a final UX solution, an AI-powered system must be built to analyze user feedback
+and conversations about photo retrieval at scale. The engine's workflow must go beyond merely
+summarizing reviews or performing basic sentiment analysis. It must extract actionable intelligence to uncover:
+The Subject Matter Friction: Identify exactly what kinds of old photos users consistently struggle
+to retrieve.
+The Memory Retention Baseline: Determine what specific contextual or sensory information
+people actually remember about a photo years later.
+The Metadata Deficit: Catalog what specific information users have typically forgotten (e.g.,
+timestamps, geolocation, exact objects).
+The Query Formulation Process: Map the exact language and structural methods users employ
+to formulate searches when their memory is fragmented and incomplete.
+•
+•
+•
+• 
+4. Data Architecture & Processing Blueprint
+To generate statistically significant insights, the AI Engine will ingest and process unstructured text
+from a diverse array of publicly available sources.
+Data Ingestion Layer: The system will parse Google Play Store reviews, App Store reviews,
+Reddit discussions, Google Photos community/support discussions, Social media conversations,
+YouTube comments, and relevant public forums.
+NLP & Processing Layer: Utilizing large language models to classify raw text into defined
+memory retrieval failure states (e.g., temporal confusion, spatial ambiguity, sensory mismatch).
+Insight Generation Layer: Clustering the parsed data to identify and compare different  retrieval
+problems and opportunity areas using direct evidence from real users.
+5. Expected Output & Business Impact
+The output of this AI-powered analysis will serve as the foundational research for the Core
+Experience product roadmap.
+Evidence-Backed Opportunity Mapping: The engine will output a prioritized matrix of retrieval
+problems, backed by real user evidence, allowing the product team to design targeted
+interventions (e.g., conversational search agents, associative filtering UI).
+Target Business Metric: Directly contribute to the strategic goal of increasing the percentage of
+users who successfully retrieve a photo when initiating a search with an imprecise or incomplete
+description.
+6. Insight Validation Layer (Quality Control)
+To ensure the AI engine produces reliable intelligence for Google Photos leadership, the workflow
+must include strict verification protocols:
+Cross-Source Triangulation: A retrieval breakdown is only validated if the behavior is observed
+across multiple ingested platforms (e.g., complaints on the Play Store align with structural queries
+discussed on Reddit).
+Dual-Model Verification: Implementing a two-tier LLM architecture where an extractive model
+captures raw user frustration quotes, and a secondary evaluator validates that the synthesis
+correctly categorizes the "forgotten" vs. "remembered" data points without hallucinating intent

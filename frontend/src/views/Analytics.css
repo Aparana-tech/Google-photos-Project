@@ -1,0 +1,221 @@
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.analytics-header {
+  margin-bottom: 8px;
+}
+
+.analytics-header .page-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.analytics-header .page-subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.analytics-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.toolbar-filters {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-label {
+  color: var(--text-secondary);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-select {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 32px 8px 12px;
+  border-radius: 20px;
+  appearance: none;
+  font-size: 13px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px auto;
+}
+
+.toolbar-search {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 8px 16px;
+  width: 300px;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  width: 100%;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.analytics-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+/* Topic Frequency Column */
+.topic-frequency-col {
+  padding: 24px;
+  align-self: flex-start;
+}
+
+.panel-header {
+  margin-bottom: 24px;
+}
+
+.panel-header h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topic-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-name {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.4;
+  max-width: 85%;
+}
+
+.topic-count {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Review Feed Column */
+.feed-header {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.feed-count {
+  color: var(--text-secondary);
+  font-weight: normal;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card {
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.review-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.review-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.badge.sentiment-badge.negative {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  border-color: rgba(255, 77, 77, 0.2);
+}
+.badge.sentiment-badge.positive {
+  color: #00e676;
+  background-color: rgba(0, 230, 118, 0.1);
+  border-color: rgba(0, 230, 118, 0.2);
+}
+.badge.sentiment-badge.neutral {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: rgba(255, 193, 7, 0.2);
+}
+
+.badge.source-badge {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.badge.theme-badge {
+  color: var(--text-secondary);
+  background-color: transparent;
+}
+
+.review-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}

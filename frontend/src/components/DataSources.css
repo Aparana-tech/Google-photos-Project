@@ -1,0 +1,72 @@
+.datasources-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.source-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.source-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.source-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.source-badge.reddit {
+  background-color: rgba(255, 69, 0, 0.2);
+  color: #ff4500;
+}
+
+.source-badge.support {
+  background-color: rgba(66, 133, 244, 0.2);
+  color: var(--google-blue);
+}
+
+.source-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.source-count {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.source-label {
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.source-percent {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  width: 32px;
+  text-align: right;
+}
