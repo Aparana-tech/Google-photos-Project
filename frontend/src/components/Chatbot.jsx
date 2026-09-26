@@ -38,11 +38,28 @@ const Chatbot = ({ isOpen, onClose }) => {
 
     // Simulate AI thinking and generating a detailed response
     setTimeout(() => {
-      const response = PREDEFINED_RESPONSES[text] || "Based on my analysis, Semantic Retrieval Failure and Temporal Confusion are the primary bottlenecks. I recommend focusing strictly on Event Anchoring to solve this.";
+      const lowerText = text.toLowerCase();
+      let response = "Based on my analysis, Semantic Retrieval Failure and Temporal Confusion are the primary bottlenecks. I recommend focusing strictly on Event Anchoring to solve this.";
+      
+      // Smart Keyword Matching
+      if (lowerText.includes("struggle") || lowerText.includes("kinds of") || lowerText.includes("what photos")) {
+        response = PREDEFINED_RESPONSES["What kinds of old photos do users struggle to retrieve?"];
+      } else if (lowerText.includes("remember") || lowerText.includes("actually")) {
+        response = PREDEFINED_RESPONSES["What information do people actually remember about a photo?"];
+      } else if (lowerText.includes("forgot") || lowerText.includes("forgotten")) {
+        response = PREDEFINED_RESPONSES["What information have they forgotten?"];
+      } else if (lowerText.includes("search") || lowerText.includes("how") || lowerText.includes("formulate")) {
+        response = PREDEFINED_RESPONSES["How do users formulate searches when their memory is incomplete?"];
+      } else if (PREDEFINED_RESPONSES[text]) {
+        response = PREDEFINED_RESPONSES[text];
+      }
+
       setMessages(prev => [...prev, { sender: 'ai', text: response }]);
       setIsTyping(false);
     }, 1200);
   };
+
+  const [inputText, setInputText] = useState("");
 
   return (
     <div className={`chatbot-overlay ${isOpen ? 'open' : ''}`}>
@@ -87,6 +104,35 @@ const Chatbot = ({ isOpen, onClose }) => {
             </div>
           )}
           <div ref={messagesEndRef} />
+        </div>
+
+        <div className="chatbot-input-container" style={{ padding: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            <input 
+              type="text" 
+              value={inputText}
+              onChange={(e) => setInputText(e.target.value)}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') {
+                  handleSend(inputText);
+                  setInputText("");
+                }
+              }}
+              placeholder="Type your own question here..."
+              style={{ flex: 1, padding: '12px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.2)', backgroundColor: 'rgba(0,0,0,0.3)', color: 'white', outline: 'none' }}
+              disabled={isTyping}
+            />
+            <button 
+              onClick={() => {
+                handleSend(inputText);
+                setInputText("");
+              }}
+              disabled={isTyping || !inputText.trim()}
+              style={{ padding: '12px 20px', borderRadius: '24px', backgroundColor: 'var(--google-blue)', color: 'white', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}
+            >
+              Send
+            </button>
+          </div>
         </div>
 
         <div className="chatbot-prompts">
