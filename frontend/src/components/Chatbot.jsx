@@ -41,12 +41,12 @@ const Chatbot = ({ isOpen, onClose }) => {
       const lowerText = text.toLowerCase();
       let response = "Based on my analysis, Semantic Retrieval Failure and Temporal Confusion are the primary bottlenecks. I recommend focusing strictly on Event Anchoring to solve this.";
       
-      // Smart Keyword Matching
-      if (lowerText.includes("struggle") || lowerText.includes("kinds of") || lowerText.includes("what photos")) {
+      // Ultra-robust Keyword Matching (handles typos)
+      if (lowerText.includes("strug") || lowerText.includes("kind") || lowerText.includes("old photo")) {
         response = PREDEFINED_RESPONSES["What kinds of old photos do users struggle to retrieve?"];
-      } else if (lowerText.includes("remember") || lowerText.includes("actually")) {
+      } else if (lowerText.includes("remember") || lowerText.includes("actual")) {
         response = PREDEFINED_RESPONSES["What information do people actually remember about a photo?"];
-      } else if (lowerText.includes("forgot") || lowerText.includes("forgotten")) {
+      } else if (lowerText.includes("forgot") || lowerText.includes("forget")) {
         response = PREDEFINED_RESPONSES["What information have they forgotten?"];
       } else if (lowerText.includes("search") || lowerText.includes("how") || lowerText.includes("formulate")) {
         response = PREDEFINED_RESPONSES["How do users formulate searches when their memory is incomplete?"];
