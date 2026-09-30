@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Analytics.css';
+import matrixJson from '../data/matrix.json';
+import feedJson from '../data/feed.json';
 
 const Analytics = () => {
   const [matrixData, setMatrixData] = useState([]);
@@ -9,18 +11,10 @@ const Analytics = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [matrixRes, feedRes] = await Promise.all([
-          fetch('http://localhost:8000/api/insights/matrix'),
-          fetch('http://localhost:8000/api/feed')
-        ]);
-        
-        const matrixJson = await matrixRes.json();
-        const feedJson = await feedRes.json();
-        
         setMatrixData(matrixJson.matrix || []);
         setFeedData(feedJson.feed || []);
       } catch (err) {
-        console.error("Failed to fetch analytics data", err);
+        console.error("Failed to load analytics data", err);
       } finally {
         setLoading(false);
       }

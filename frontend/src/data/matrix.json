@@ -1,0 +1,103 @@
+{
+  "matrix": [
+    {
+      "cluster_id": 8,
+      "failure_state": "Temporal Confusion",
+      "frequency": 1380,
+      "raw_quotes": [
+        "Had always worked as required but now will not open. It tries to start up but crashes every time. Also, how difficult would it be to make the link the developer replied with clickable? Or selectable so I could copy and paste it to the browser on my phone? Having to flip between apps whilst trying to remember a seemingly random series of letters and numbers doesn't help with the frustration. If there is already a way for me to do this easily, it's not obvious to an old geezer like me.",
+        "Developer response: check article. Hint; IF YOUR APP NEEDS AN ARTICLE TO WORK RIGHT, then you failed! The app has some bugs/being slow on some points/some lackings... won't let me move to folder with it seems.. It won't let me uninstall it, so I disable it... It doesn't have dark mode... It shows folders shown in move to folder in alphabetical instead of when they were created / used.... I use Huawei, and it doesn't show that some folders are hidden, maybe it doesn't even do that on this app...",
+        "So annoying!! Yes I know I'm out of storage. The app completely inundates you with annoying popups, reminding you that you're out of storage, making it impossible to actually, you know, clean up space. I'm going to download all of my photos and videos off of your service, delete the app and never use it again because you annoyed me so much"
+      ],
+      "description": "Users confused by altered chronologies, forgetting exact dates, and incorrect timestamps applied to old photos."
+    },
+    {
+      "cluster_id": 6,
+      "failure_state": "Spatial Disorientation",
+      "frequency": 768,
+      "raw_quotes": [
+        "Be careful with this app. If you have important photos don't trust it to back it up on the cloud and remove it from your phone. You would rather save it somewhere else, manually back it up, before you let it back it up for you. It is not always true that they have your photos backed up on the cloud when it says so. I used to trust is app for saving and backing up my pictures to the cloud, but it is not always true that they back up your photos on to the cloud before clearing the phone's storage. That happened to me in the worst of times, I filed two feedback on what happened and no response was give at all. Two weeks already past. I lost all the photos that I took for a trip. I can't go back to that place because it was hard to get there. I was expecting to use the photos. I saw Google Photo already created an album out of it. It told me to remove photos of my phone that is already backed up to save space and that all my pictures are backed up on the cloud. When I hit clean up, it removed all the photos on my phone. When I go back to Google Photos the photos are gone! I searched all the Google Photo, Google Cloud, Google Drive apps for my backup photos. I googled it up to see what to do, but nothing helped. I spend more than a few hours looking for the photos but nothing. It is all gone along with the album. When I send a feedback, it ask me to go to help. So I go to help and look some more in case I missed something. It did not help. So I went back to the feedback trying to send it. It was still asking me to look in help, so I selected no thanks. Nothing happened after that. I was not sure if the feedback was sent. So I send the feedback again describing everything. Then it says it successfully send the feedback... It is 2 weeks now and still nothing. I think they lost my photos and nothing they can do about it. They lost my trust by saying they have my photos backed up in the cloud and told me to clean up my phone when in fact it was not backed up.",
+        "Google Photos is one of the most poorly designed apps that I've ever used. The search feature is very inaccurate, and you'll get a migraine before you locate what you're looking for through visual inspection.",
+        "When searching for photos for other apps using search at a certain point scrolling breaks and list jumps up. and it happens at the same spot every time. EXTREMELY ANNOYING. Check your ai code, indian people, before publishing Also search is VERY censored. Can't find tons of things because of it. I must reformulate quarries to get results. ANNOYING"
+      ],
+      "description": "Users struggling to locate photos by specific geographical city or neighborhood names due to lack of geotagging."
+    },
+    {
+      "cluster_id": 1,
+      "failure_state": "Context Loss",
+      "frequency": 575,
+      "raw_quotes": [
+        "The \"memories\" feature, which my wife loves, now has music with expletives. Our kids were watching. How can we turn this music off while keeping the memories feature?",
+        "it only works well with back up turned on if you turn it off suddenly everything is a challenge, you need like 6 clicks to get to your latest screenshot or photo",
+        "STOP SUGGESTING REMIXES AND CREATIONS I DO NOT WANT OR CONSENT MY PHOTOS FOR AI!! this app used to be simple. I hate these AI \"tools\" shoved down our throats. they are NOT HELPFUL. STOP RECOMMENDING THEM!!"
+      ],
+      "description": "Users missing contextual metadata (like event names or specific people) that were previously tagged."
+    },
+    {
+      "cluster_id": 0,
+      "failure_state": "System Frustration",
+      "frequency": 285,
+      "raw_quotes": [
+        "absolutely terrible experience with this app on my Samsung. It said I was running out of storage space and gave me the option to cleanup my photos, which I thought I was doing from the app. But it cleared all the photos from my actual phone from my gallery!! thankfully, I was able to restore them, but None of them automatically went back to my gallery. so now over 1700 photos need to be reorganized into the folders. that were in my gallery. i will never use this app to back up my photos.",
+        "it's not easier to manage photos! in other words, file management is terrible. it's actually made more difficult, no doubt to force free 15gb users to upgrade to 100gb. deleting large videos that count towards storage space, automatically sorts videos largest to smallest and there's no way to sort or change the view. unintuitive and awkward",
+        "Absurdity of this app is beyond imagination! I got a new phone, I tried to transfer pics, so I selected pics from photos app and started downloading them. for some reason, it stopped after downloading some pics. now before I start download my pics, this stupid app started uploading those very same pics and now I have two copies of them in my Google Photos, plus less storage!! insane."
+      ],
+      "description": "Users reporting complete disappearance of manually created albums after device migration or backup sync."
+    },
+    {
+      "cluster_id": 3,
+      "failure_state": "Social Disconnect",
+      "frequency": 155,
+      "raw_quotes": [
+        "who wants this,do we need it really... Samsung notes from 2024 are becoming useless ,2000 thousand phone, have two note 20 and note9, photos were better then...",
+        "Edit 2: Stopped detecting faces in photos. Frequently asks to turn on device backup. Should not ask again once denied. Edit: Submitted a feedback. No use. Still randomly asks to turn on device backup. They made it random to increase accidental taps.",
+        "you guys just ruined the whole app for me with the new interface change. I liked the old interface way better because it actually showed me more of the photos that I took and had saved rather than trying to look \"cool\" first and showing the images last"
+      ],
+      "description": "Users reporting failure of facial recognition grouping for new photos of previously tagged family members."
+    },
+    {
+      "cluster_id": 4,
+      "failure_state": "Spatial Disorientation",
+      "frequency": 31,
+      "raw_quotes": [
+        "1) Only like 7 colours to use for the pen...in 2026 when there are 6 billion colours available on a phone. 2) The search photos feature only works if you subscribe to monthly cloud space now. It never used to be like that. Need to move away from Google. 3) It makes you save copies of everything which fills up your space, probably to trick you into paying for cloud. 4) Screenshots go into camera roll now, but that could be phone specific.",
+        "I don't understand why do I got to pay a subscription to keep my photos, I need to pay a subscription just to search for a photo because I didn't have enough space, I deleted 800 photos and videos and I still didn't have space, I have a new phone and I still don't have space, it shouldn't be doing that",
+        "What happened to select all, I have to manually select hundreds of photos? And if I want to download a photo, it's a multi step process on top of that. I'm definitely ending my increased storage storage subscription, and finding a more versatile photo storage provider that lets me manage my files easily. Most recent updates address storage, of which I have more than sufficient space. What I don't have is time to waste organising all my images individually. Fix that."
+      ],
+      "description": "Users struggling to locate photos by specific geographical city or neighborhood names due to lack of geotagging."
+    },
+    {
+      "cluster_id": 2,
+      "failure_state": "Context Loss",
+      "frequency": 30,
+      "raw_quotes": [
+        "Very difficult to use. I have an album of 44 photos & videos on my device. I want to add those 44 photos and videos to a Google Photos album but there does not seem to be an option to do that. Why would this not be an option? It seems like adding an album from my device to Google Photos should be an easy thing to do. It also keeps indicating the photos were taken in May 2026 but they were all taken in March 2026. Why is there no option to correct it? Just a really frustrating app.",
+        "the white line that appears and fades again, is AI analyzing your photos. This cannot be turned off. I want to have a choice if I use AI or not.",
+        "not user friendly, overly complicated, and many photos will not show up from shared albums. I am trying to open an album on the app and on desktop and it will not show up on the albums tab no matter what I do, I have to use the link. incredibly frustrating and so many features that should be obvious but not available."
+      ],
+      "description": "Users missing contextual metadata (like event names or specific people) that were previously tagged."
+    },
+    {
+      "cluster_id": 7,
+      "failure_state": "Temporal Confusion",
+      "frequency": 9,
+      "raw_quotes": [
+        "\"Make the app yours\" banner trying to, as usual, shove Gemini down everyone's throat doesn't dismiss even after selecting \"No thanks\". Creating an album is now a nightmare, when it used to be easy and intuitive. Just try adding locations, which upon editing jump back to the top even after being dragged later in the album, which happens pretty much every time a location is added. Unreal, how consistently and severely Google breaks their own once-working products. Trash redesign.",
+        "This app was so good. Until, recently I re-downloaded a few photos back on my device and when I checked a few days later they were automatically deleted from my device and I haven't even disabled the automatic backup settings. I've experienced that more than twice. It's very frustrating.",
+        "HEALING BRUSH! The new magic eraser is utterly impossible to use. In the previous version it was the perfect tool. It used to be fantastic for retouches like skin blemishes. Now it over selects and does a worse job. Major downgrade. At the very least include the healing brush from Snapspeed. UPDATE: Now the healing brush is available but requires a face in the photo. ugh. please just allow us to use the tool without face detection. It's not a feature!"
+      ],
+      "description": "Users confused by altered chronologies, forgetting exact dates, and incorrect timestamps applied to old photos."
+    },
+    {
+      "cluster_id": 5,
+      "failure_state": "Spatial Disorientation",
+      "frequency": 6,
+      "raw_quotes": [
+        "Each update the app is getting worse. Magic eraser don't suggest what to erase anymore, and works worse than a year ago. Reimagine is not available in the ui, you can only find it by searching. Zoom enchant is garbage that makes photos look much worse than they were before. So disappointed. You are going completely the wrong way, you are adding AI everywhere, but doing this bad.",
+        "MY PHOTOS ARE MISSING!!!! My old photos that were backed up and I could see earlier are missing now. I was deleting some of the old photos and realised a huge chunk of my old photos are missing. I don't know how to find them, there were some important, memorable photos in there and now they're gone. What am I supposed to do now? I want my old photos back.",
+        "Can you believe ?? This app is from a big world company !! In today's era, where HEIC is trending, this app can't open/ play that file type. Can you give the option to rearrange (at least default short by name, an album starts with \"W\" i.e. whatsapp on top, tf)* Most of album is not showing. can't we back-up particular album or photo except videos like backup only for camera and image ? SAMSUNG IS SUPERIOR !! From All !!"
+      ],
+      "description": "Users struggling to locate photos by specific geographical city or neighborhood names due to lack of geotagging."
+    }
+  ]
+}

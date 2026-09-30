@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ThemeIntelligence.css';
+import matrixJson from '../data/matrix.json';
 
 const OPPORTUNITIES = {
   "Temporal Confusion": {
@@ -27,11 +28,9 @@ const ThemeIntelligence = () => {
   useEffect(() => {
     const fetchMatrix = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/insights/matrix');
-        const json = await res.json();
-        setMatrixData(json.matrix || []);
+        setMatrixData(matrixJson.matrix || []);
       } catch (err) {
-        console.error("Failed to fetch matrix data", err);
+        console.error("Failed to load matrix data", err);
       } finally {
         setLoading(false);
       }
@@ -68,6 +67,9 @@ const ThemeIntelligence = () => {
                   <li style={{ color: '#00e676', fontWeight: 'bold' }}>
                     <span style={{ marginRight: '6px' }}>🎯</span>
                     1. Event Anchoring (Life Chapters): <span style={{ fontWeight: 'normal', color: 'var(--text-primary)' }}>"During my Goa trip..." (Primary Opportunity)</span>
+                    <ul style={{ paddingLeft: '25px', marginTop: '4px', marginBottom: '4px', listStyleType: 'circle', color: '#ffb74d' }}>
+                      <li><strong>#1 Highest Use Case:</strong> Travel & Vacations (Massive photo volume, high context retention, low date retention).</li>
+                    </ul>
                   </li>
                   <li style={{ color: '#00e676', fontWeight: 'bold' }}>
                     <span style={{ marginRight: '6px' }}>🎯</span>

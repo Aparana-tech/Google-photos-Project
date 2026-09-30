@@ -4,6 +4,7 @@ import OpportunityMatrix from '../components/OpportunityMatrix';
 import PrioritizationMatrix from '../components/PrioritizationMatrix';
 import SentimentDistribution from '../components/SentimentDistribution';
 import DataSources from '../components/DataSources';
+import matrixJson from '../data/matrix.json';
 
 const Dashboard = () => {
   const [matrixData, setMatrixData] = useState([]);
@@ -13,16 +14,12 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/insights/matrix');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        setMatrixData(data.matrix || []);
+        // Load static data instead of fetching from Python backend
+        setMatrixData(matrixJson.matrix || []);
         setLoading(false);
       } catch (err) {
-        console.error("Error fetching data:", err);
-        setError("Could not connect to the Discovery Engine API. Make sure the backend is running on port 8000.");
+        console.error("Error loading data:", err);
+        setError("Could not load insights data.");
         setLoading(false);
       }
     };
