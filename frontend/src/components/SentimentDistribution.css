@@ -6,7 +6,10 @@
 }
 
 .sentiment-header {
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  flex-shrink: 0;
 }
 
 .section-title {
