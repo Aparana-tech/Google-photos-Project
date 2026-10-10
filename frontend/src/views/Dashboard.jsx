@@ -121,6 +121,29 @@ const Dashboard = () => {
                     </ul>
                   </div>
                 )}
+                
+                <div style={{ marginTop: '24px', textAlign: 'center' }}>
+                  <a href="#" target="_blank" rel="noopener noreferrer" style={{
+                    display: 'inline-block',
+                    backgroundColor: 'var(--google-blue)',
+                    color: '#ffffff',
+                    padding: '12px 24px',
+                    borderRadius: '24px',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    fontSize: '1.1rem',
+                    boxShadow: '0 4px 12px rgba(66, 133, 244, 0.3)',
+                    transition: 'transform 0.2s'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                  onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                  >
+                    ✨ Launch Event Anchoring MVP Prototype
+                  </a>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '8px' }}>
+                    Click to view the interactive UI solution
+                  </p>
+                </div>
               </div>
             </div>
           )}
