@@ -123,7 +123,7 @@ const Dashboard = () => {
                 )}
                 
                 <div style={{ marginTop: '24px', textAlign: 'center' }}>
-                  <a href="#" target="_blank" rel="noopener noreferrer" style={{
+                  <a href="https://google-photos-feature-mvp-production.up.railway.app/" target="_blank" rel="noopener noreferrer" style={{
                     display: 'inline-block',
                     backgroundColor: 'var(--google-blue)',
                     color: '#ffffff',
