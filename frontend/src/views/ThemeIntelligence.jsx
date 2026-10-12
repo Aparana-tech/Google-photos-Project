@@ -66,7 +66,7 @@ const ThemeIntelligence = () => {
                 <ul style={{ color: 'var(--text-secondary)', fontSize: '13px', paddingLeft: '20px', lineHeight: '1.8' }}>
                   <li style={{ color: '#00e676', fontWeight: 'bold' }}>
                     <span style={{ marginRight: '6px' }}>🎯</span>
-                    1. Event Anchoring (Life Chapters): <span style={{ fontWeight: 'normal', color: 'var(--text-primary)' }}>"During my Goa trip..." (Primary Opportunity)</span>
+                    1. Visual Journey Track (Life Chapters): <span style={{ fontWeight: 'normal', color: 'var(--text-primary)' }}>"During my Goa trip..." (Primary Opportunity)</span>
                     <ul style={{ paddingLeft: '25px', marginTop: '4px', marginBottom: '4px', listStyleType: 'circle', color: '#ffb74d' }}>
                       <li><strong>#1 Highest Use Case:</strong> Travel & Vacations (Massive photo volume, high context retention, low date retention).</li>
                     </ul>

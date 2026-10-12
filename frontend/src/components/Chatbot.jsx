@@ -6,16 +6,16 @@ const PREDEFINED_PROMPTS = [
   "What information do people actually remember about a photo?",
   "What information have they forgotten?",
   "How do users formulate searches when their memory is incomplete?",
-  "Why are Trips and Vacations the highest opportunity for Event Anchoring?"
+  "Why are Trips and Vacations the highest opportunity for Visual Journey Track?"
 ];
 
 const PREDEFINED_RESPONSES = {
   "What kinds of old photos do users struggle to retrieve?": "Based on our AI analysis of 3,239 scraped reviews, users struggle the most to retrieve two distinct categories:\n\n1. **Everyday Utility Images**: Screenshots of receipts, recipes, or Wi-Fi passwords. These lack inherent textual metadata.\n2. **Specific Event/Life Chapter Photos**: Images tied to specific colloquial memories (e.g., 'that small café during our Goa trip' or 'the medicine I took when I was sick last year'). Because these photos are buried chronologically and lack exact dates, users experience complete retrieval failure.",
   "What information do people actually remember about a photo?": "Our opportunity matrix reveals that human memory is highly associative rather than chronological. People strongly remember:\n\n- **Social Context**: Who they were with ('I was with my sister').\n- **General Visuals**: Distinct colors or objects ('I was wearing a red jacket').\n- **Life Chapters**: The broader event ('during my college graduation').\n\nUsers remember the *intent* and *context* of the photo, but current search engines only reward strict keyword matching.",
   "What information have they forgotten?": "Users suffer heavily from two phenomena, which cause the current Google Photos search engine to break down:\n\n1. **Temporal Confusion (Our #1 Friction Point)**: Users completely forget the exact year or month a photo was taken. They cannot search by rigid calendar dates.\n2. **Spatial Disorientation**: They forget the specific city name, exact GPS landmark, or the name of the curated album they created.\n\nWithout these rigid metadata points, the user is forced into endless, frustrating chronological scrolling.",
-  "How do users formulate searches when their memory is incomplete?": "When memory is incomplete, users abandon keyword searches and naturally attempt to formulate **Semantic, Natural-Language Queries**. \n\nInstead of typing 'Goa June 2019', they will search for: *'That small cafe we went to during our Goa trip.'* \n\nBecause the current Google Photos engine relies on rigid chronological timelines and exact object detection, it completely fails to interpret this human intent. This proves that building an **Event Anchoring Search Engine** is our biggest product opportunity.",
-  "Are potentially relevant results difficult to evaluate?": "Yes, absolutely. Because the current Google Photos search relies on exact visual matching rather than semantic context, a vague search returns hundreds of scattered images across a massive chronological feed.\n\nThis forces a massive **cognitive load** on the user. They must manually evaluate, scroll, and filter through visually similar but irrelevant photos. This overwhelming manual evaluation is exactly why users abandon the search. Event Anchoring solves this by semantically filtering out the noise.",
-  "Why are Trips and Vacations the highest opportunity for Event Anchoring?": "Our data proves that Trips and Vacations generate the absolute highest volume of retrieval failures. This happens because of a perfect storm of memory mechanics:\n\n1. **High Photo Density**: Users take thousands of photos in a compressed 3 to 7 day window, creating massive photo clusters.\n2. **High Context Retention**: Years later, users remember exactly *who* they were with and *where* they went (the 'Event Anchor').\n3. **Zero Date Retention (Temporal Confusion)**: The brain completely deletes the exact calendar date of the trip.\n\nBecause users remember the Event but forget the Date, forcing them to search chronologically is guaranteed to fail. Building an Event Anchoring Search specifically for Travel is our most lucrative MVP."
+  "How do users formulate searches when their memory is incomplete?": "When memory is incomplete, users abandon keyword searches and naturally attempt to formulate **Semantic, Natural-Language Queries**. \n\nInstead of typing 'Goa June 2019', they will search for: *'That small cafe we went to during our Goa trip.'* \n\nBecause the current Google Photos engine relies on rigid chronological timelines and exact object detection, it completely fails to interpret this human intent. This proves that building a **Visual Journey Track Search Engine** is our biggest product opportunity.",
+  "Are potentially relevant results difficult to evaluate?": "Yes, absolutely. Because the current Google Photos search relies on exact visual matching rather than semantic context, a vague search returns hundreds of scattered images across a massive chronological feed.\n\nThis forces a massive **cognitive load** on the user. They must manually evaluate, scroll, and filter through visually similar but irrelevant photos. This overwhelming manual evaluation is exactly why users abandon the search. Visual Journey Track solves this by semantically filtering out the noise.",
+  "Why are Trips and Vacations the highest opportunity for Visual Journey Track?": "Our data proves that Trips and Vacations generate the absolute highest volume of retrieval failures. This happens because of a perfect storm of memory mechanics:\n\n1. **High Photo Density**: Users take thousands of photos in a compressed 3 to 7 day window, creating massive photo clusters.\n2. **High Context Retention**: Years later, users remember exactly *who* they were with and *where* they went (the 'Event Anchor').\n3. **Zero Date Retention (Temporal Confusion)**: The brain completely deletes the exact calendar date of the trip.\n\nBecause users remember the Event but forget the Date, forcing them to search chronologically is guaranteed to fail. Building a Visual Journey Track Search specifically for Travel is our most lucrative MVP."
 };
 
 const Chatbot = ({ isOpen, onClose }) => {
@@ -42,7 +42,7 @@ const Chatbot = ({ isOpen, onClose }) => {
     // Simulate AI thinking and generating a detailed response
     setTimeout(() => {
       const lowerText = text.toLowerCase();
-      let response = "Based on my analysis, Semantic Retrieval Failure and Temporal Confusion are the primary bottlenecks. I recommend focusing strictly on Event Anchoring to solve this.";
+      let response = "Based on my analysis, Semantic Retrieval Failure and Temporal Confusion are the primary bottlenecks. I recommend focusing strictly on Visual Journey Track to solve this.";
       
       // Ultra-robust Keyword Matching (handles typos)
       if (lowerText.includes("strug") || lowerText.includes("kind") || lowerText.includes("old photo")) {
@@ -56,7 +56,7 @@ const Chatbot = ({ isOpen, onClose }) => {
       } else if (lowerText.includes("eval") || lowerText.includes("diff") || lowerText.includes("result")) {
         response = PREDEFINED_RESPONSES["Are potentially relevant results difficult to evaluate?"];
       } else if (lowerText.includes("trip") || lowerText.includes("vacation") || lowerText.includes("travel")) {
-        response = PREDEFINED_RESPONSES["Why are Trips and Vacations the highest opportunity for Event Anchoring?"];
+        response = PREDEFINED_RESPONSES["Why are Trips and Vacations the highest opportunity for Visual Journey Track?"];
       } else if (PREDEFINED_RESPONSES[text]) {
         response = PREDEFINED_RESPONSES[text];
       }
