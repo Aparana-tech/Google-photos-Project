@@ -6,7 +6,7 @@ import SentimentDistribution from '../components/SentimentDistribution';
 import DataSources from '../components/DataSources';
 import matrixJson from '../data/matrix.json';
 
-const Dashboard = () => {
+const Dashboard = ({ onOpenMvp }) => {
   const [matrixData, setMatrixData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -38,6 +38,80 @@ const Dashboard = () => {
       <div className="dashboard-header">
         <h2>Research Overview</h2>
         <p>AI-powered analysis of Google Photos retrieval failures — uncovering search barriers & user behavior patterns</p>
+      </div>
+
+      {/* Prominent Top Banner for the Deployed MVP */}
+      <div className="panel" style={{
+        background: 'linear-gradient(135deg, rgba(66, 133, 244, 0.16) 0%, rgba(52, 168, 83, 0.12) 100%)',
+        border: '1px solid rgba(66, 133, 244, 0.4)',
+        borderRadius: '12px',
+        padding: '16px 20px',
+        marginBottom: '24px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: '16px'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{ fontSize: '30px' }}>🚀</div>
+          <div>
+            <div style={{ color: 'var(--text-primary)', fontWeight: '700', fontSize: '1.05rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>Event Anchoring MVP Prototype is Live</span>
+              <span style={{ fontSize: '11px', background: 'var(--google-blue)', color: '#ffffff', padding: '2px 8px', borderRadius: '10px', fontWeight: '600' }}>
+                INTERACTIVE DEMO
+              </span>
+            </div>
+            <div style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', marginTop: '4px' }}>
+              Addressing the #1 UX Bottleneck (<strong>Temporal Confusion</strong>, 52% of user failures). Test the life chapter anchor search!
+            </div>
+          </div>
+        </div>
+        <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
+          {onOpenMvp && (
+            <button
+              onClick={onOpenMvp}
+              style={{
+                background: 'rgba(255, 255, 255, 0.08)',
+                color: 'var(--text-primary)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                padding: '9px 16px',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                fontWeight: '600',
+                fontSize: '13px',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.08)'}
+            >
+              Preview Here
+            </button>
+          )}
+          <a
+            href="https://google-photos-feature-mvp-production.up.railway.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              background: 'var(--google-blue)',
+              color: '#ffffff',
+              padding: '9px 20px',
+              borderRadius: '20px',
+              textDecoration: 'none',
+              fontWeight: '600',
+              fontSize: '13px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              boxShadow: '0 4px 12px rgba(66, 133, 244, 0.35)',
+              transition: 'transform 0.2s'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.04)'}
+            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+          >
+            <span>Launch Live MVP ↗</span>
+          </a>
+        </div>
       </div>
 
       <div className="stats-grid">
